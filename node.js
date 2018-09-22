@@ -16,14 +16,14 @@ app.post('/you', urlencodedParser, function (req, res){
   var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'vinodyevatikar95@gmail.com',
-      pass: 'sumanbai5'
+      user: 'useremail',
+      pass: 'userpass'
     }
   });
   
   var mailOptions = {
-    from: 'vinodyevatikar95@gmail.com',
-    to: 'vinodyevatikar@gmail.com',
+    from: 'useremail',
+    to: 'clientemail',
     subject: 'Sending Email using Node.js',
     html: '<h1>total to pay '+ total +' </h1>',
     text: 'Your invoice Thank u !'
